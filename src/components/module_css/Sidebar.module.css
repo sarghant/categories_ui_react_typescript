@@ -1,0 +1,28 @@
+.sidebar {
+  width: calc(var(--base-unit) * 8px);
+  height: 100%;
+  background: var(--primary-bg);
+  border-radius: 15px;
+}
+ul {
+  width: 100%;
+}
+li {
+  width: 100%;
+}
+.btn-link {
+  display: block;
+  text-align: center;
+  width: 100%;
+  border-radius: calc(var(--base-unit) * 1px);
+  cursor: pointer;
+  outline: none;
+  transition: background 0.1s ease-in-out;
+}
+.btn-link:hover,
+.btn-link:focus {
+  background: hsl(var(--primary-hue) 30% 40% / 0.4);
+}
+.btn-link.active {
+  background: hsl(var(--primary-hue) 30% 40% / 0.7);
+}

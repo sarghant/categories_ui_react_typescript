@@ -1,0 +1,44 @@
+.btn {
+  width: calc(var(--base-unit) * 5px);
+  height: calc(var(--base-unit) * 5px);
+  border: 1px solid var(--primary-bg);
+  background: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: opacity 0.1s ease-in-out, background 0.1s ease-in-out;
+}
+.btn > * {
+  pointer-events: none;
+}
+.btn-grid {
+  border-top-left-radius: calc((var(--base-unit) / 2) * 1px);
+  border-bottom-left-radius: calc((var(--base-unit) / 2) * 1px);
+}
+.btn-list {
+  border-top-right-radius: calc((var(--base-unit) / 2) * 1px);
+  border-bottom-right-radius: calc((var(--base-unit) / 2) * 1px);
+}
+.btn:hover {
+  opacity: 0.6;
+}
+.btn.active {
+  background-color: var(--primary-bg);
+}
+/* Button content */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid > span {
+  width: calc(var(--base-unit) * 1px);
+  height: calc(var(--base-unit) * 1px);
+  border: 1px solid var(--text-color);
+  border-radius: 2px;
+}
+.list > span {
+  width: calc(var(--base-unit) * 2.5px);
+  height: calc(var(--base-unit) * 1px);
+  border: 1px solid var(--text-color);
+  border-radius: 2px;
+  background: var(--primary-bg);
+}
